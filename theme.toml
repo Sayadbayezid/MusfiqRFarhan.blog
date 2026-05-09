@@ -1,0 +1,12 @@
+name = "Farhan Blog Theme"
+license = "MIT"
+licenselink = ""
+description = "Official Blog and Portfolio for Mushfiq R Farhan."
+homepage = "https://www.musfiqrfarhan.blog"
+demosite = "https://www.musfiqrfarhan.blog"
+tags = ["Responsive", "Blog", "Portfolio", "Personal"]
+min_version = "0.68.0"
+
+[author]
+  name = "Mushfiq R Farhan"
+  homepage = "https://www.musfiqrfarhan.blog"
