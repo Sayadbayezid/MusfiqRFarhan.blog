@@ -1,4 +1,4 @@
-name: Deploy Hugo site to GitHub Pages
+Name: Deploy Hugo site to GitHub Pages
 
 on:
   push:
@@ -38,8 +38,15 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
+        
+      # 새로 যুক্ত করা অংশ (Node.js এবং প্যাকেজ ইনস্টল করার জন্য)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+        run: npm install
+
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
