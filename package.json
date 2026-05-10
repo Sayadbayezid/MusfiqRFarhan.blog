@@ -1,13 +1,13 @@
 {
-  "name": "musfiq-r-farhan-blog",
+  "name": "hugoDocs",
   "version": "1.0.0",
-  "description": "Official blog of Mushfiq R Farhan",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Sayad Md Bayezid Hosan",
-  "license": "MIT",
+  "author": "",
+  "license": "",
   "devDependencies": {
     "@awmottaz/prettier-plugin-void-html": "~2.0.0",
     "@tailwindcss/cli": "~4.1.18",
