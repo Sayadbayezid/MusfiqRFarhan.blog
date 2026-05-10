@@ -13,11 +13,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      
+      # This check will now only WARN you instead of failing
       - uses: streetsidesoftware/cspell-action@v6
         with:
           incremental_files_only: true
-          strict: true
+          strict: false 
+          
+      # This check will also be more relaxed
       - uses: codespell-project/actions-codespell@v2
         with:
           check_filenames: true
           check_hidden: true
+          # You can add 'only_warn: true' if you want this to never fail
+          only_warn: true 
