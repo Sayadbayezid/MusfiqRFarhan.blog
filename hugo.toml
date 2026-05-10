@@ -1,4 +1,4 @@
-baseURL = "https://www.musfiqrfarhan.blog/"
+BaseURL = "https://www.musfiqrfarhan.blog/"
 title   = "Musfiq R Farhan"
 
 defaultContentLanguage = "en"
@@ -28,3 +28,7 @@ timeZone               = "Asia/Dhaka"
 [services]
   [services.googleAnalytics]
     ID = 'G-MBZGKNMDWC'
+
+[security]
+  [security.funcs]
+    getenv = ['^HUGO_', '^CI$', '^BRANCH$']
